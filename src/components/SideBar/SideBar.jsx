@@ -10,7 +10,6 @@ const MAP_NAV = [
   "Education",
   "Experience",
   "Work",
-  "Blog",
   "Contact",
 ];
 

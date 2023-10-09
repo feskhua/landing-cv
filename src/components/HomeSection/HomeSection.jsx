@@ -4,7 +4,7 @@ import pdf from "../../assets/fes.jpg";
 
 const HomeSection = () => {
   return (
-    <Container className={styles.wrapper}>
+    <Container className={styles.wrapper} id="Home">
       <Row className={`${styles.greeting} `}>
         <Col>
           <h1>

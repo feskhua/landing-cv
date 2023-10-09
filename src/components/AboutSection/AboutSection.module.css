@@ -1,0 +1,16 @@
+.about_desc p {
+  font-size: 15px;
+  margin-bottom: 1.5em;
+}
+
+.animate_box h3 {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.animate_box img {
+  height: 30px;
+  margin-bottom: 20px;
+  width: 30px;
+}

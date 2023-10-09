@@ -1,0 +1,140 @@
+.animate {
+  position: relative;
+}
+
+.desc {
+  margin-top: 60px;
+  min-height: 200px;
+  text-align: center;
+}
+
+.desc h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.desc p {
+  font-size: 15px;
+  margin-bottom: 1.5em;
+}
+
+.icon {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  display: table;
+  margin: 0 auto;
+  background: green;
+}
+
+.icon:before,
+.icon:after {
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.icon:before {
+  border-color: transparent transparent green transparent;
+  border-style: solid;
+  border-width: 0px 50px 30px 50px;
+  height: 0;
+  top: -30px;
+  width: 0;
+}
+
+.icon:after {
+  bottom: -30px;
+  border-color: green transparent transparent transparent;
+  border-style: solid;
+  border-width: 30px 50px 0 50px;
+  height: 0;
+  width: 0;
+}
+
+.icon img {
+  display: block;
+  height: 30px;
+  margin: auto;
+  position: relative;
+  top: 20%;
+  width: 30px;
+  z-index: 1;
+}
+
+.color_1 {
+  background: #2c98f0;
+}
+
+.color_1:before {
+  border-color: transparent transparent #2c98f0 transparent;
+}
+
+.color_1:after {
+  border-color: #2c98f0 transparent transparent transparent;
+}
+
+.color_2 {
+  background: #ec5453;
+}
+
+.color_2:before {
+  border-color: transparent transparent #ec5453 transparent;
+}
+
+.color_2:after {
+  border-color: #ec5453 transparent transparent transparent;
+}
+
+.color_3 {
+  background: #f9bf3f;
+}
+
+.color_3:before {
+  border-color: transparent transparent #f9bf3f transparent;
+}
+
+.color_3:after {
+  border-color: #f9bf3f transparent transparent transparent;
+}
+
+.color_4 {
+  background: #a84cb8;
+}
+
+.color_4:before {
+  border-color: transparent transparent #a84cb8 transparent;
+}
+
+.color_4:after {
+  border-color: #a84cb8 transparent transparent transparent;
+}
+
+.color_5 {
+  background: #2fa499;
+}
+
+.color_5:before {
+  border-color: transparent transparent #2fa499 transparent;
+}
+
+.color_5:after {
+  border-color: #2fa499 transparent transparent transparent;
+}
+
+.color_6 {
+  background: #4054b2;
+}
+
+.color_6:before {
+  border-color: transparent transparent #4054b2 transparent;
+}
+
+.color_6:after {
+  border-color: #4054b2 transparent transparent transparent;
+}
