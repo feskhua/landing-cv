@@ -43,158 +43,145 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 992px) {
-  .wrapper_content {
-    width: 100%;
-  }
-}
-
-.timeline-centered {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.timeline-centered:before,
-.timeline-centered:after {
-  content: " ";
-  display: table;
-}
-
-.timeline-centered:after {
-  clear: both;
-}
-
-.timeline-centered:before,
-.timeline-centered:after {
-  content: " ";
-  display: table;
-}
-
-.timeline-centered:after {
-  clear: both;
-}
-
-.timeline-centered:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 4px;
+.SkillsSection_progress_wrap__Wos0l .progress {
   background: #f2f3f7;
-  top: 20px;
-  bottom: 20px;
-  margin-left: 29px;
+  box-shadow: none;
+  height: 6px;
+  overflow: visible;
+  -webkit-box-shadow: none;
 }
 
-.timeline-centered .timeline-entry {
-  position: relative;
-  margin-top: 5px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  clear: both;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner {
-  position: relative;
-  margin-left: -20px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
-  display: block;
-  width: 40px;
-  height: 40px;
+.SkillsSection_progress_wrap__Wos0l .progress-bar {
   background: #2c98f0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
+  border-radius: 8px;
+  box-shadow: none;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  overflow: visible;
+  position: relative;
+  text-align: right;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -webkit-box-shadow: none;
+}
+
+.SkillsSection_progress_wrap__Wos0l .progress-bar:after {
+  background: #2c98f0;
   border-radius: 50%;
-  text-align: center;
-  -moz-box-shadow: 0 0 0 5px #f2f3f7;
-  -webkit-box-shadow: 0 0 0 5px #f2f3f7;
-  box-shadow: 0 0 0 5px #f2f3f7;
-  line-height: 40px;
-  float: left;
+  content: "";
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: -2px;
+  width: 10px;
 }
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
-  color: #fff;
+
+.SkillsSection_progress_wrap__Wos0l .color-1 .progress-bar {
+  background: #2c98f0;
 }
-.timeline-centered
-  .timeline-entry
-  .timeline-entry-inner
-  .timeline-icon.color-2 {
+
+.SkillsSection_progress_wrap__Wos0l .color-1 .progress-bar:after {
+  background: #2c98f0;
+}
+
+.SkillsSection_progress_wrap__Wos0l span.color-1 {
+  color: #2c98f0;
+}
+
+.SkillsSection_progress_wrap__Wos0l .color-2 .progress-bar {
   background: #ec5453;
 }
-.timeline-centered
-  .timeline-entry
-  .timeline-entry-inner
-  .timeline-icon.color-3 {
+
+.SkillsSection_progress_wrap__Wos0l .color-2 .progress-bar:after {
+  background: #ec5453;
+}
+
+.SkillsSection_progress_wrap__Wos0l span.color-2 {
+  color: #ec5453;
+}
+
+.SkillsSection_progress_wrap__Wos0l .color-3 .progress-bar {
   background: #f9bf3f;
 }
 
-.timeline-centered
-  .timeline-entry
-  .timeline-entry-inner
-  .timeline-icon.color-none {
-  background: #fff;
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
+.SkillsSection_progress_wrap__Wos0l .color-3 .progress-bar:after {
+  background: #f9bf3f;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
-  position: relative;
-  background: #f2f3f7;
-  padding: 1.5em;
-  margin-left: 60px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
+.SkillsSection_progress_wrap__Wos0l span.color-3 {
+  color: #f9bf3f;
+  right: 15%;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 9px 9px 9px 0;
-  border-color: transparent #f2f3f7 transparent transparent;
-  left: 0;
-  top: 10px;
-  margin-left: -9px;
+.SkillsSection_progress_wrap__Wos0l .color-4 .progress-bar {
+  background: #a84cb8;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p + p {
-  margin-top: 15px;
+.SkillsSection_progress_wrap__Wos0l .color-4 .progress-bar:after {
+  background: #a84cb8;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 20px;
+.SkillsSection_progress_wrap__Wos0l span.color-4 {
+  color: #a84cb8;
+  right: 20%;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 15px;
-
+.SkillsSection_progress_wrap__Wos0l .color-5 .progress-bar {
+  background: #2fa499;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
-  color: #000;
-  text-decoration: none;
+.SkillsSection_progress_wrap__Wos0l .color-5 .progress-bar:after {
+  background: #2fa499;
 }
 
-.timeline-centered
-  .timeline-entry
-  .timeline-entry-inner
-  .timeline-label
-  h2
-  span {
-  -webkit-opacity: 0.4;
-  -moz-opacity: 0.4;
-  opacity: 0.4;
-  -ms-filter: alpha(opacity=40);
-  filter: alpha(opacity=40);
-  font-size: 16px;
+.SkillsSection_progress_wrap__Wos0l span.color-5 {
+  color: #2fa499;
+}
+
+.SkillsSection_progress_wrap__Wos0l .color-6 .progress-bar {
+  background: #4054b2;
+}
+
+.SkillsSection_progress_wrap__Wos0l .color-6 .progress-bar:after {
+  background: #4054b2;
+}
+
+.SkillsSection_progress_wrap__Wos0l span.color-6 {
+  color: #4054b2;
+ 
+}
+
+.SkillsSection_progress_wrap__Wos0l .color-7 .progress-bar {
+  background: #ff1ca7;
+}
+
+.SkillsSection_progress_wrap__Wos0l .color-7 .progress-bar:after {
+  background: #ff1ca7;
+}
+
+.SkillsSection_progress_wrap__Wos0l span.color-7 {
+  color: #ff1ca7;
+  right: 5%;
+}
+
+.SkillsSection_progress_wrap__Wos0l .color-8 .progress-bar {
+  background: #53ec54;
+}
+
+.SkillsSection_progress_wrap__Wos0l .color-8 .progress-bar:after {
+  background: #53ec54;
+}
+
+.SkillsSection_progress_wrap__Wos0l span.color-8 {
+  color: #53ec54;
+  right: 10%;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper_content {
+    width: 100%;
+  }
 }

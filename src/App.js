@@ -2,7 +2,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Stack } from "react-bootstrap";
-import { AboutSection, HomeSection, SideBar, ServicesSection, ExperienceSection } from "./components";
+import { AboutSection, HomeSection, SideBar, ServicesSection, ExperienceSection, SkillsSection, WorkSection } from "./components";
+
 
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
             <HomeSection />
             <AboutSection />
             <ServicesSection />
+            <SkillsSection />
             <ExperienceSection />
+            <WorkSection />
           </Stack>
         </Stack>
       </div>

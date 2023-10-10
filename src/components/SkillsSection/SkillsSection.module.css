@@ -1,0 +1,16 @@
+.progress_wrap {
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.progress_wrap h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.progress_wrap span {
+  font-size: 12px;
+  position: absolute;
+  right: 10%;
+  top: 5px;
+}

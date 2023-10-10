@@ -1,5 +1,5 @@
+import styles from "./ExperienceSection.module.css";
 import { Col, Container, Row, Stack } from "react-bootstrap";
-import styles from "./ ExperienceSection.module.css";
 import { Fade } from "react-reveal";
 
 const ExperienceSection = () => {
@@ -16,21 +16,20 @@ const ExperienceSection = () => {
       <Container>
         <Row>
           <Col md={12}>
-            <div className="timeline-centered">
+            <div className={styles.timeline_centered}>
               <Fade cascade right>
                 <div>
-                  <article
-                    className="timeline-entry "
-                    data-animate-effect="fadeInLeft"
-                  >
-                    <div className="timeline-entry-inner">
-                      <div className="timeline-icon color-1">
+                  <article className={styles.timeline_entry}>
+                    <div className={styles.timeline_entry_inner}>
+                      <div
+                        className={`${styles.timeline_icon} ${styles.color_1}`}
+                      >
                         <i className="bi bi-pencil"></i>
                       </div>
 
-                      <div className="timeline-label">
+                      <div className={styles.timeline_label}>
                         <h2>
-                          <a href="#"> Back End Developer at SoftServe</a>{" "}
+                          <a href="#Home"> Back End Developer at SoftServe</a>
                           <span> 2016 - 2019</span>
                         </h2>
                         <p>
@@ -46,17 +45,16 @@ const ExperienceSection = () => {
                     </div>
                   </article>
 
-                  <article
-                    className="timeline-entry "
-                    data-animate-effect="fadeInRight"
-                  >
-                    <div className="timeline-entry-inner">
-                      <div className="timeline-icon color-2">
+                  <article className={styles.timeline_entry}>
+                    <div className={styles.timeline_entry_inner}>
+                      <div
+                        className={`${styles.timeline_icon} ${styles.color_2}`}
+                      >
                         <i className="bi bi-pencil"></i>
                       </div>
-                      <div className="timeline-label">
+                      <div className={styles.timeline_label}>
                         <h2>
-                          <a href="#">Full Stack Developer at MayeWorks</a>{" "}
+                          <a href="#Home">Full Stack Developer at MayeWorks</a>{" "}
                           <span>2019 - 2021</span>
                         </h2>
                         <p>
@@ -71,17 +69,16 @@ const ExperienceSection = () => {
                     </div>
                   </article>
 
-                  <article
-                    className="timeline-entry "
-                    data-animate-effect="fadeInLeft"
-                  >
-                    <div className="timeline-entry-inner">
-                      <div className="timeline-icon color-3">
+                  <article className={styles.timeline_entry}>
+                    <div className={styles.timeline_entry_inner}>
+                      <div
+                        className={`${styles.timeline_icon} ${styles.color_3}`}
+                      >
                         <i className="bi bi-pencil"></i>
                       </div>
-                      <div className="timeline-label">
+                      <div className={styles.timeline_label}>
                         <h2>
-                          <a href="#">
+                          <a href="#Home">
                             Senior Full Stack Developer as Freelancer
                           </a>{" "}
                           <span>2021 - Now</span>
@@ -103,12 +100,11 @@ const ExperienceSection = () => {
                   </article>
                 </div>
               </Fade>
-              <article
-                className="timeline-entry begin "
-                data-animate-effect="fadeInBottom"
-              >
-                <div className="timeline-entry-inner">
-                  <div className="timeline-icon color-none"></div>
+              <article className={styles.timeline_entry}>
+                <div className={styles.timeline_entry_inner}>
+                  <div
+                    className={`${styles.timeline_icon} ${styles.color_none}`}
+                  ></div>
                 </div>
               </article>
             </div>

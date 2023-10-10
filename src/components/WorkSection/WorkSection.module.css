@@ -1,0 +1,31 @@
+.project {
+  background-image: url(../../assets/Bluejay.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 600px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.project:hover {
+  position: relative;
+}
+
+.desc {
+  background: #2c98f0;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  opacity: 0;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.project:hover .desc {
+  opacity: 1;
+}
