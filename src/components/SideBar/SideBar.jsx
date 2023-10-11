@@ -1,4 +1,4 @@
-import { Image, Nav, Stack } from "react-bootstrap";
+import { Button, Collapse, Image, Nav, Stack } from "react-bootstrap";
 import styles from "./SideBar.module.css";
 import photo from "../../assets/fes.jpg";
 
@@ -15,7 +15,11 @@ const MAP_NAV = [
 
 const SideBar = () => {
   return (
-    <Stack className={`${styles.wrapper} align-items-center`} gap={2}>
+    <Stack
+      className={`${styles.wrapper} align-items-center`}
+      gap={2}
+      id="side-bar"
+    >
       <Image className={styles.author_img} src={photo} roundedCircle />
       <h1 className={styles.author_name}>
         <a className="text-decoration-none" href="#1">

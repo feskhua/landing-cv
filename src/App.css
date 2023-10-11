@@ -5,12 +5,32 @@
 
 .wrapper_content {
   margin: 0 auto;
-  width: 80%;
+  width: 1170px;
 }
 
 .wrapper_section {
   margin-top: 100px;
   padding: 0 37px;
+  position: relative;
+}
+
+@media screen and (max-width: 1170px) {
+  .wrapper_content {
+    width: 100%;
+  }
+}
+
+.menu_icon {
+  cursor: pointer;
+  font-size: 30px;
+  left: 20px;
+  position: fixed;
+  top: 20px;
+  z-index: 1;
+}
+
+.menu_icon:hover {
+  font-size: 35px;
 }
 
 .heding_meta {
@@ -151,7 +171,6 @@
 
 .SkillsSection_progress_wrap__Wos0l span.color-6 {
   color: #4054b2;
- 
 }
 
 .SkillsSection_progress_wrap__Wos0l .color-7 .progress-bar {
@@ -178,10 +197,4 @@
 .SkillsSection_progress_wrap__Wos0l span.color-8 {
   color: #53ec54;
   right: 10%;
-}
-
-@media screen and (max-width: 992px) {
-  .wrapper_content {
-    width: 100%;
-  }
 }

@@ -1,0 +1,18 @@
+.heading {
+  background-color: #2c98f0;
+  color: #fff;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 20px 25px;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.content {
+  border: 1px solid #e6e6e6;
+  margin-top: 5px;
+  padding: 1.5em;
+}

@@ -1,10 +1,10 @@
 .project {
-  background-image: url(../../assets/Bluejay.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
-  height: 600px;
+  font-size: 13px;
+  height: 700px;
   margin-bottom: 30px;
   position: relative;
   width: 100%;
@@ -28,4 +28,11 @@
 
 .project:hover .desc {
   opacity: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .project {
+    font-size: 14px;
+    height: 600px;
+  }
 }
