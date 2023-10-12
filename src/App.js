@@ -13,25 +13,43 @@ import {
   EducationSection,
   ContactSection,
 } from "./components";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
-  function getWindowSize() {
+  const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
-  }
+  };
 
   const [windowSize, setWindowSize] = useState(getWindowSize());
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(null);
+  const lastScrollTop = useRef(0);
 
   useEffect(() => {
-    function handleWindowResize() {
+    const handleWindowResize = () => {
       setWindowSize(getWindowSize());
-    }
+    };
 
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const prevScrollTop = lastScrollTop.current;
+
+      if (prevScrollTop === 0) {
+        lastScrollTop.current = scrollTop;
+        return;
+      }
+
+      if (prevScrollTop !== scrollTop) {
+        setOpen(false);
+        lastScrollTop.current = scrollTop;
+      }
+    };
+
+    window.addEventListener("scrollend", handleScroll);
     window.addEventListener("resize", handleWindowResize);
 
     return () => {
+      window.removeEventListener("scrollend", handleScroll);
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
@@ -42,8 +60,7 @@ function App() {
     <Stack className="align-items-center">
       <div className="wrapper_content">
         <Stack direction="horizontal">
-          {(!isSmSize || open) && <SideBar />}
-
+          <SideBar open={open} isSmSize={isSmSize} />
           <Stack className="section">
             {isSmSize && !open && (
               <i
@@ -52,7 +69,7 @@ function App() {
                   setOpen(true);
                 }}
               ></i>
-            )}{" "}
+            )}
             {isSmSize && open && (
               <i
                 className="menu_icon bi bi-x-lg"

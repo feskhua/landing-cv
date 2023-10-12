@@ -4,14 +4,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 976px;
-  padding: 0 37px;
+  padding: 0 40px;
   position: relative;
   width: 100%;
 }
 
 .greeting {
-  bottom: 40%;
-  width: 280px;
+  animation: slide-bottom 0.7s forwards linear;
+  position: relative;
+  top: 40%;
+  vertical-align: middle;
 }
 
 .greeting h1 {
@@ -28,6 +30,10 @@
   line-height: 1.5;
   margin-bottom: 30px;
 }
+.greeting button:hover {
+  background-color: inherit;
+  border: 1px solid #000;
+}
 
 .greeting button {
   border: 1px solid #000;
@@ -37,10 +43,28 @@
   width: 162px;
 }
 
-.greeting button:hover {
-  background-color: #fff;
-}
-
 .greeting button a {
   color: #000 !important;
+}
+
+@media screen and (max-width: 769px) {
+  .greeting {
+    text-align: center;
+  }
+  .greeting h1 {
+    font-size: 28px;
+  }
+
+  .greeting button {
+    width: 100%;
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    top: 60%;
+  }
+  100% {
+    top: 40%;
+  }
 }

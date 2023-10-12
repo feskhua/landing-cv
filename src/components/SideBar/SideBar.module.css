@@ -1,13 +1,13 @@
 .wrapper {
   background-color: #f2f3f7;
   flex-grow: 0;
+  margin-left: 0;
   max-height: 100vh;
   min-width: 300px;
   padding: 45px 0 40px;
   width: 300px;
   position: sticky;
   top: 0;
-  transition: 0.7s;
 }
 
 .author_img {
@@ -63,4 +63,30 @@
 }
 
 .nav_panel_item {
+}
+
+@media screen and (max-width: 769px) {
+  .animation_box {
+    animation: slide-left 0.7s forwards linear;
+  }
+  .box {
+    animation: slide-right 0.7s forwards linear;
+  }
+}
+@keyframes slide-left {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -300px;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    margin-left: -300px;
+  }
+  100% {
+    margin-left: -0px;
+  }
 }

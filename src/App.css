@@ -22,15 +22,14 @@
 
 .menu_icon {
   cursor: pointer;
-  font-size: 30px;
-  left: 20px;
+  font-size: 25px;
+  padding: 20px;
   position: fixed;
-  top: 20px;
   z-index: 1;
 }
 
 .menu_icon:hover {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .heding_meta {

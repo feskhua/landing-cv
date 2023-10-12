@@ -1,12 +1,12 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row, Stack } from "react-bootstrap";
 import styles from "./HomeSection.module.css";
-import pdf from "../../assets/fes.jpg";
+import cvPdf from "../../assets/cv.pdf";
 
 const HomeSection = () => {
   return (
     <Container className={styles.wrapper} id="Home">
       <Row className={`${styles.greeting} `}>
-        <Col>
+        <Col sm={12} md={6}>
           <h1>
             Hi! <br /> I am Yevhenii
           </h1>
@@ -15,7 +15,7 @@ const HomeSection = () => {
             <a
               className="text-decoration-none link-secondary"
               download="CV"
-              href={pdf}
+              href={cvPdf}
             >
               Download CV <i className="bi bi-box-arrow-in-down"></i>
             </a>
