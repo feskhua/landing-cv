@@ -13,16 +13,6 @@
   clear: both;
 }
 
-.timeline_centered:before,
-.timeline_centered:after {
-  content: " ";
-  display: table;
-}
-
-.timeline_centered:after {
-  clear: both;
-}
-
 .timeline_centered:before {
   content: "";
   position: absolute;

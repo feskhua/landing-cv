@@ -28,7 +28,7 @@ const AboutSection = () => {
       </div>
       <Container>
         <Row className={styles.animate_wrapper}>
-          <Col md={3}>
+          <Col lg={3}>
             <Fade left>
               <div
                 className={`${styles.animate_box} animate_wrapper`}
@@ -39,7 +39,7 @@ const AboutSection = () => {
               </div>
             </Fade>
           </Col>
-          <Col md={3}>
+          <Col lg={3}>
             <Fade right>
               <div
                 className={`${styles.animate_box} animate_wrapper`}
@@ -50,7 +50,7 @@ const AboutSection = () => {
               </div>
             </Fade>
           </Col>
-          <Col md={3}>
+          <Col lg={3}>
             <Fade bottom>
               <div
                 className={`${styles.animate_box} animate_wrapper`}

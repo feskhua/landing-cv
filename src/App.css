@@ -62,6 +62,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 576px){
+  .animate_wrapper {
+    margin-right: 0;
+  }
+}
+
 .SkillsSection_progress_wrap__Wos0l .progress {
   background: #f2f3f7;
   box-shadow: none;

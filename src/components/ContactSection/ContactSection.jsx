@@ -35,7 +35,7 @@ const ContactSection = () => {
         <div className={styles.colorlib_icon} style={{ width: "100px" }}>
           <img alt="linkedinSvg" src={linkedinSvg} />
         </div>
-        <a href={LINKEDIN}>{LINKEDIN}</a>
+        <a href={LINKEDIN} style={{wordBreak: "break-word"}} rel="noreferrer" target="_blank">{LINKEDIN}</a>
       </Stack>
     </Stack>
   );

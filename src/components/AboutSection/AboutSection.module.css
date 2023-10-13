@@ -14,3 +14,10 @@
   margin-bottom: 20px;
   width: 30px;
 }
+
+@media screen and (min-width: 993px) {
+  .animate_box {
+    min-height: 143px;
+    min-width: 130px;
+  }
+}

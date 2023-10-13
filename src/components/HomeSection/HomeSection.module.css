@@ -1,19 +1,22 @@
-.wrapper {
-  background-image: url("../../assets/fes1.png");
+.wrapper{
+  /* background-image: url("../../assets/fes1.png"); */
+  background-image: url("../../assets/img_bg_1.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+}
+
+.content {
   height: 976px;
   padding: 0 40px;
   position: relative;
-  width: 100%;
 }
 
 .greeting {
   animation: slide-bottom 0.7s forwards linear;
   position: relative;
   top: 40%;
-  vertical-align: middle;
 }
 
 .greeting h1 {

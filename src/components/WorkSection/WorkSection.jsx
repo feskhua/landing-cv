@@ -2,6 +2,7 @@ import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 import styles from "./WorkSection.module.css";
 import Bluejay from "../../assets/Bluejay.png";
 import Voguescope from "../../assets/Voguescope.png";
+import Switfly from "../../assets/Switfly.png";
 
 const WorkSection = () => {
   return (
@@ -19,8 +20,9 @@ const WorkSection = () => {
           <Col>
             <div
               className={styles.project}
-              style={{ backgroundImage: `url(${Bluejay})` }}
+              // style={{ backgroundImage: `url(${Bluejay})` }}
             >
+              <Image fluid src={Bluejay} />
               <Row className={styles.desc}>
                 <Col lg={6}>
                   <h3>BlueJayRental</h3>
@@ -67,8 +69,9 @@ const WorkSection = () => {
           <Col>
             <div
               className={styles.project}
-              style={{ backgroundImage: `url(${Voguescope})` }}
+              // style={{ backgroundImage: `url(${Voguescope})` }}
             >
+              <Image fluid src={Voguescope} />
               <Row className={styles.desc}>
                 <Col lg={6}>
                   <h3>Voguescope</h3>
@@ -121,9 +124,10 @@ const WorkSection = () => {
           <Col>
             <div
               className={styles.project}
-              style={{ backgroundImage: `url(${Voguescope})` }}
+              // style={{ backgroundImage: `url(${Switfly})` }}
             >
-              <Row className={styles.desc}>
+              <Image fluid src={Switfly} />
+              <Row className={`${styles.desc} `}>
                 <Col lg={6}>
                   <h3>Switfly</h3>
                   <p>

@@ -1,17 +1,8 @@
 .project {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: block;
   font-size: 13px;
-  height: 700px;
   margin-bottom: 30px;
   position: relative;
   width: 100%;
-}
-
-.project:hover {
-  position: relative;
 }
 
 .desc {
@@ -32,7 +23,20 @@
 
 @media screen and (min-width: 992px) {
   .project {
-    font-size: 14px;
-    height: 600px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .desc {
+    height: 700px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desc {
+    height: 840px;
+    z-index: 1;
   }
 }

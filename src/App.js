@@ -40,7 +40,7 @@ function App() {
       }
 
       if (prevScrollTop !== scrollTop) {
-        setOpen(false);
+        setOpen(null);
         lastScrollTop.current = scrollTop;
       }
     };
