@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>linkedin-svgrepo-com-svg</title>
+	<style>
+		.s0 { fill: none } 
+		.s1 { fill: #2c98f0 } 
+	</style>
+	<path id="Layer" class="s0" d="m0 0h512v512h-512z"/>
+	<g id="Layer">
+		<path id="Layer" class="s1" d="m64 176.6h76.8v284.2h-76.8zm38.4-33.3c-25.5 0-46.1-20.6-46.1-46.1 0-25.4 20.6-46 46.1-46 25.5 0 46.1 20.6 46.1 46 0 25.5-20.6 46.1-46.1 46.1zm169 76.8v-43.5h-76.8v284.2h76.8v-146c0-81.9 104.9-87 104.9 0v146h76.8v-174.1c0-138.3-145.9-133.1-181.7-66.6z"/>
+	</g>
+</svg>
