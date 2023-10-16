@@ -24,7 +24,7 @@ const ExperienceSection = () => {
                       <div
                         className={`${styles.timeline_icon} ${styles.color_1}`}
                       >
-                        <i className="bi bi-pencil"></i>
+                        <i className="bi bi-pencil" />
                       </div>
 
                       <div className={styles.timeline_label}>
@@ -50,7 +50,7 @@ const ExperienceSection = () => {
                       <div
                         className={`${styles.timeline_icon} ${styles.color_2}`}
                       >
-                        <i className="bi bi-pencil"></i>
+                        <i className="bi bi-pencil" />
                       </div>
                       <div className={styles.timeline_label}>
                         <h2>
@@ -74,7 +74,7 @@ const ExperienceSection = () => {
                       <div
                         className={`${styles.timeline_icon} ${styles.color_3}`}
                       >
-                        <i className="bi bi-pencil"></i>
+                        <i className="bi bi-pencil" />
                       </div>
                       <div className={styles.timeline_label}>
                         <h2>

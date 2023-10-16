@@ -1,4 +1,4 @@
-import { Col, Container, Image, Row, Stack } from "react-bootstrap";
+import { Col, Container, Row, Stack } from "react-bootstrap";
 import styles from "./ContactSection.module.css";
 import emailSvg from "../../assets/email.svg";
 import linkedinSvg from "../../assets/linkedin.svg";

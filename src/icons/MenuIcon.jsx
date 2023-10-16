@@ -1,12 +1,12 @@
-const MenuIcon = ({color="black", height="16", width="16"}) => {
+const MenuIcon = ({color="black"}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="50"
-      height="30"
+      width="16"
+      height="16"
       fill={`${color}`}
       className="bi bi-list"
-      viewBox={`0 0 50 30`}
+      viewBox={`0 0 16 16`}
     >
       <path
         fillRule="evenodd"

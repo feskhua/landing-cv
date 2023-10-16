@@ -68,7 +68,7 @@ function App() {
                 onClick={() => {
                   setOpen(true);
                 }}
-              ></i>
+              />
             )}
             {isSmSize && open && (
               <i
@@ -76,7 +76,7 @@ function App() {
                 onClick={() => {
                   setOpen(false);
                 }}
-              ></i>
+              />
             )}
             <HomeSection />
             <AboutSection />

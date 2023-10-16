@@ -1,4 +1,4 @@
-import { Button, Col, Container, Row, Stack } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import styles from "./HomeSection.module.css";
 import cvPdf from "../../assets/cv.pdf";
 

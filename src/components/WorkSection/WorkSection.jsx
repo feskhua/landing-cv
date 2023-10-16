@@ -18,10 +18,7 @@ const WorkSection = () => {
       <Container>
         <Row>
           <Col>
-            <div
-              className={styles.project}
-              // style={{ backgroundImage: `url(${Bluejay})` }}
-            >
+            <div className={styles.project}>
               <Image fluid src={Bluejay} />
               <Row className={styles.desc}>
                 <Col lg={6}>
@@ -67,10 +64,7 @@ const WorkSection = () => {
         </Row>
         <Row>
           <Col>
-            <div
-              className={styles.project}
-              // style={{ backgroundImage: `url(${Voguescope})` }}
-            >
+            <div className={styles.project}>
               <Image fluid src={Voguescope} />
               <Row className={styles.desc}>
                 <Col lg={6}>
@@ -122,10 +116,7 @@ const WorkSection = () => {
         </Row>
         <Row>
           <Col>
-            <div
-              className={styles.project}
-              // style={{ backgroundImage: `url(${Switfly})` }}
-            >
+            <div className={styles.project}>
               <Image fluid src={Switfly} />
               <Row className={`${styles.desc} `}>
                 <Col lg={6}>
