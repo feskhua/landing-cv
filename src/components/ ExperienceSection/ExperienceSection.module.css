@@ -53,9 +53,11 @@
   line-height: 40px;
   float: left;
 }
+
 .timeline_centered .timeline_entry .timeline_entry_inner .timeline_icon i {
   color: #fff;
 }
+
 .timeline_centered
   .timeline_entry
   .timeline_entry_inner

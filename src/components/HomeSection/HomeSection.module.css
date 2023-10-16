@@ -1,6 +1,5 @@
-.wrapper{
-  /* background-image: url("../../assets/fes1.png"); */
-  background-image: url("../../assets/img_bg_1.jpg");
+.wrapper {
+  background-image: url("../../assets/home.png");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,16 +49,37 @@
   color: #000 !important;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 576px) {
+  .wrapper {
+    background-image: none;
+  }
+
+  .content {
+    height: 500px;
+  }
+
   .greeting {
     text-align: center;
   }
+
   .greeting h1 {
     font-size: 28px;
   }
 
   .greeting button {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .greeting {
+    right: 7%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .greeting h1 {
+    font-size: 45px;
   }
 }
 

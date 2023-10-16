@@ -5,6 +5,11 @@
   width: 100%;
 }
 
+.project hr {
+  border-top: 3px solid #2c98f0;
+  opacity: 0.6;
+}
+
 .desc {
   background: #2c98f0;
   bottom: 0;

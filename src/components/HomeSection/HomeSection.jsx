@@ -7,7 +7,7 @@ const HomeSection = () => {
     <div className={styles.wrapper}>
       <Container className={styles.content} id="Home">
         <Row className={`${styles.greeting} `}>
-          <Col xs={12} sm={12} md={6}>
+          <Col xs={12} md={6}>
             <h1>
               Hi! <br /> I am Yevhenii
             </h1>
