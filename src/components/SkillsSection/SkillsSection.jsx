@@ -1,10 +1,11 @@
 import { Col, Container, ProgressBar, Row, Stack } from "react-bootstrap";
 import styles from "./SkillsSection.module.css";
 import { Fade } from "react-reveal";
+import { forwardRef } from "react";
 
-const SkillsSection = () => {
+const SkillsSection = forwardRef(function SkillsSection(_, ref) {
   return (
-    <Stack className="wrapper_section" id="Skills">
+    <Stack className="wrapper_section" id="Skills" ref={ref}>
       <Container>
         <span className="heding_meta ">My Specialty</span>
         <Row>
@@ -28,7 +29,7 @@ const SkillsSection = () => {
                   </Col>
                   <Col>
                     <div className={styles.progress_wrap}>
-                      <h3>Angula</h3>
+                      <h3>Angular</h3>
                       <ProgressBar className="color-3" now={85} />
                       <span className="color-3">85%</span>
                     </div>
@@ -91,6 +92,6 @@ const SkillsSection = () => {
       </Container>
     </Stack>
   );
-};
+});
 
 export default SkillsSection;

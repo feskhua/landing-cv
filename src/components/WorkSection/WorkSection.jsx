@@ -3,10 +3,11 @@ import styles from "./WorkSection.module.css";
 import Bluejay from "../../assets/Bluejay.png";
 import Voguescope from "../../assets/Voguescope.png";
 import Switfly from "../../assets/Swiftly.png";
+import { forwardRef } from "react";
 
-const WorkSection = () => {
+const WorkSection = forwardRef(function WorkSection(_, ref) {
   return (
-    <Stack className="wrapper_section" id="Work">
+    <Stack className="wrapper_section" id="Work" ref={ref}>
       <Container>
         <span className="heding_meta ">My Work</span>
         <Row>
@@ -177,6 +178,6 @@ const WorkSection = () => {
       </Container>
     </Stack>
   );
-};
+});
 
 export default WorkSection;

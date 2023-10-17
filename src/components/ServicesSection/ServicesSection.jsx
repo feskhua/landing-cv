@@ -7,10 +7,11 @@ import dataBaseSvg from "../../assets/database.svg";
 import cloudSvg from "../../assets/cloud.svg";
 import mobileSvg from "../../assets/mobile-app.svg";
 import agileSvg from "../../assets/agile.svg";
+import { forwardRef } from "react";
 
-const ServicesSection = ({ isMdSize }) => {
+const ServicesSection = forwardRef(function ServicesSection({ isMdSize }, ref) {
   return (
-    <Stack className="wrapper_section" id="Services">
+    <Stack className="wrapper_section" id="Services" ref={ref}>
       <Container>
         <span className="heding_meta ">What I do?</span>
         <Row>
@@ -181,7 +182,7 @@ const ServicesSection = ({ isMdSize }) => {
                       <h3>Backend</h3>
                       <p>
                         Creating advanced Backend systems using Express,
-                        Nest.js, and related libraries and frameworks
+                        Nest.js, Django and related libraries and frameworks
                       </p>
                     </div>
                   </div>
@@ -271,6 +272,6 @@ const ServicesSection = ({ isMdSize }) => {
       </Container>
     </Stack>
   );
-};
+});
 
 export default ServicesSection;

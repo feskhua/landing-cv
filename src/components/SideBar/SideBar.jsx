@@ -2,7 +2,7 @@ import { Image, Nav, Stack } from "react-bootstrap";
 import styles from "./SideBar.module.css";
 import photo from "../../assets/fes.jpg";
 
-const MAP_NAV = [
+export const MAP_NAV = [
   "Home",
   "About",
   "Services",
@@ -10,13 +10,14 @@ const MAP_NAV = [
   "Education",
   "Experience",
   "Work",
+  "Interests",
   "Contact",
 ];
 
-const SideBar = ({ isSmSize, open }) => {
+const SideBar = ({ activeIndex, isSmSize, open }) => {
   return (
     <>
-      {(open !== null || !isSmSize) &&
+      {(open !== null || !isSmSize) && (
         <Stack
           className={`${styles.wrapper} align-items-center  ${
             !isSmSize || open ? styles.box : styles.animation_box
@@ -34,11 +35,11 @@ const SideBar = ({ isSmSize, open }) => {
             <a className="text-decoration-none" href="#2">
               Full Stack Web Developer
             </a>
-            from Ukraine
+            <div>From Ukraine</div>
           </div>
           <Nav
-            className={`${styles.nav_panel} flex-column justify-content-center`}
-            defaultActiveKey={`/${MAP_NAV[0]}`}
+            className={`${styles.nav_panel} flex-column justify-content-center mt-3`}
+            activeKey={activeIndex}
             variant="underline"
           >
             {MAP_NAV.map((item, index) => (
@@ -48,7 +49,7 @@ const SideBar = ({ isSmSize, open }) => {
               >
                 <Nav.Link
                   className={styles.nav_panel_link}
-                  eventKey={item}
+                  eventKey={index}
                   href={`#${item}`}
                 >
                   {item}
@@ -57,7 +58,7 @@ const SideBar = ({ isSmSize, open }) => {
             ))}
           </Nav>
         </Stack>
-      }
+      )}
     </>
   );
 };

@@ -7,3 +7,5 @@ export { default as SkillsSection } from "./SkillsSection/SkillsSection";
 export { default as WorkSection } from "./WorkSection/WorkSection";
 export { default as EducationSection } from "./EducationSection/EducationSection";
 export { default as ContactSection } from "./ContactSection/ContactSection";
+export { default as Footer } from "./Footer/Footer";
+export { default as InterestsSection } from "./InterestsSection/InterestsSection";

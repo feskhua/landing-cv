@@ -1,10 +1,11 @@
+import { forwardRef } from "react";
 import styles from "./ExperienceSection.module.css";
 import { Col, Container, Row, Stack } from "react-bootstrap";
 import { Fade } from "react-reveal";
 
-const ExperienceSection = () => {
+const ExperienceSection = forwardRef(function(_, ref) {
   return (
-    <Stack className="wrapper_section" id="Experience">
+    <Stack className="wrapper_section" id="Experience" ref={ref}>
       <Container>
         <span className="heding_meta ">Experience</span>
         <Row>
@@ -54,7 +55,7 @@ const ExperienceSection = () => {
                       </div>
                       <div className={styles.timeline_label}>
                         <h2>
-                          <a href="#Home">Full Stack Developer at MayeWorks</a>{" "}
+                          <a href="#Home">Full Stack Developer at MaybeWorks</a>
                           <span>2019 - 2021</span>
                         </h2>
                         <p>
@@ -113,6 +114,6 @@ const ExperienceSection = () => {
       </Container>
     </Stack>
   );
-};
+});
 
 export default ExperienceSection;

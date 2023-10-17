@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/landing-cv/static/css/main.4bf3ee0d.css",
-    "main.js": "/landing-cv/static/js/main.f3d3d6b3.js",
+    "main.css": "/landing-cv/static/css/main.d666830a.css",
+    "main.js": "/landing-cv/static/js/main.27be0c01.js",
     "static/js/787.c19234ab.chunk.js": "/landing-cv/static/js/787.c19234ab.chunk.js",
     "static/media/Voguescope.png": "/landing-cv/static/media/Voguescope.94dd851603748ac39752.png",
+    "static/media/hicking.png": "/landing-cv/static/media/hicking.d67da242f20d6f8a366d.png",
+    "static/media/tea.png": "/landing-cv/static/media/tea.8f0b4a08bb7caaf31edb.png",
     "static/media/fes.jpg": "/landing-cv/static/media/fes.9c75af6b0d59295b4478.jpg",
     "static/media/PlayfairDisplay-SemiBold.ttf": "/landing-cv/static/media/PlayfairDisplay-SemiBold.8762ccb8000d27202454.ttf",
     "static/media/PlayfairDisplay-Medium.ttf": "/landing-cv/static/media/PlayfairDisplay-Medium.b6b10a3a3492328a0c3f.ttf",
@@ -22,6 +24,7 @@
     "static/media/Quicksand-SemiBold.ttf": "/landing-cv/static/media/Quicksand-SemiBold.6018f97203d39e0dfc6d.ttf",
     "static/media/Quicksand-Light.ttf": "/landing-cv/static/media/Quicksand-Light.20523381a742ca1d4a26.ttf",
     "static/media/Quicksand-Bold.ttf": "/landing-cv/static/media/Quicksand-Bold.bac7ed87f9bcd95a6c55.ttf",
+    "static/media/guitar.jpg": "/landing-cv/static/media/guitar.c63434e2189c6f1e4756.jpg",
     "static/media/agile.svg": "/landing-cv/static/media/agile.fcaae711a1cea2063b5f69ae9333f8d2.svg",
     "static/media/mobile-app.svg": "/landing-cv/static/media/mobile-app.cb3af94f510df7117000de875ea051ec.svg",
     "static/media/collaboration.svg": "/landing-cv/static/media/collaboration.c0a01c84f2a4cb2a4d919ee052ca704a.svg",
@@ -35,12 +38,12 @@
     "static/media/email.svg": "/landing-cv/static/media/email.a54e78c491e41003e843b3bf3c7b3963.svg",
     "index.html": "/landing-cv/index.html",
     "static/media/linkedin.svg": "/landing-cv/static/media/linkedin.cabf6aba43a88698fdc1740179de3bff.svg",
-    "main.4bf3ee0d.css.map": "/landing-cv/static/css/main.4bf3ee0d.css.map",
-    "main.f3d3d6b3.js.map": "/landing-cv/static/js/main.f3d3d6b3.js.map",
+    "main.d666830a.css.map": "/landing-cv/static/css/main.d666830a.css.map",
+    "main.27be0c01.js.map": "/landing-cv/static/js/main.27be0c01.js.map",
     "787.c19234ab.chunk.js.map": "/landing-cv/static/js/787.c19234ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bf3ee0d.css",
-    "static/js/main.f3d3d6b3.js"
+    "static/css/main.d666830a.css",
+    "static/js/main.27be0c01.js"
   ]
 }

@@ -16,27 +16,41 @@ const ContactSection = () => {
           </Col>
         </Row>
       </Container>
-
-      <Stack
-        className={`${styles.contact} align-content-center mb-3`}
-        direction="horizontal"
-        gap={3}
-      >
-        <div className={styles.colorlib_icon}>
-          <img alt="email" src={emailSvg} />
-        </div>
-        <a href={`mailto: ${EMAIL}`}>{EMAIL}</a>
-      </Stack>
-      <Stack
-        className={`${styles.contact} align-content-center mb-4`}
-        direction="horizontal"
-        gap={3}
-      >
-        <div className={styles.colorlib_icon} style={{ width: "100px" }}>
-          <img alt="linkedinSvg" src={linkedinSvg} />
-        </div>
-        <a href={LINKEDIN} style={{wordBreak: "break-word"}} rel="noreferrer" target="_blank">{LINKEDIN}</a>
-      </Stack>
+      <Container>
+        <Row>
+          <Col lg={6}>
+            <Stack
+              className={`${styles.contact} align-content-center mb-3`}
+              direction="horizontal"
+              gap={3}
+            >
+              <div className={styles.colorlib_icon}>
+                <img alt="email" src={emailSvg} />
+              </div>
+              <a href={`mailto: ${EMAIL}`}>{EMAIL}</a>
+            </Stack>
+          </Col>
+          <Col lg={6}>
+            <Stack
+              className={`${styles.contact} align-content-center mb-4`}
+              direction="horizontal"
+              gap={3}
+            >
+              <div className={styles.colorlib_icon} style={{ width: "100px" }}>
+                <img alt="linkedinSvg" src={linkedinSvg} />
+              </div>
+              <a
+                href={LINKEDIN}
+                style={{ wordBreak: "break-word" }}
+                rel="noreferrer"
+                target="_blank"
+              >
+                Linkedin
+              </a>
+            </Stack>
+          </Col>
+        </Row>
+      </Container>
     </Stack>
   );
 };

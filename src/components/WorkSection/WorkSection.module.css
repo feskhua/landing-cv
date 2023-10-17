@@ -15,33 +15,54 @@
   bottom: 0;
   color: #fff;
   left: 0;
-  opacity: 0;
   padding: 15px;
   position: absolute;
   right: 0;
   top: 0;
+  transition: height 2s;
+  visibility: hidden;
 }
 
 .project:hover .desc {
-  opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (min-width: 992px) {
   .project {
     font-size: 15px;
   }
+
+  .desc {
+    height: 300px;
+    z-index: 1;
+  }
+
+  .project:hover .desc {
+    height: 500px;
+    visibility: visible;
+  }
 }
 
 @media screen and (max-width: 993px) {
   .desc {
-    height: 700px;
+    height: 400px;
     z-index: 1;
+  }
+
+  .project:hover .desc {
+    height: 700px;
+    visibility: visible;
   }
 }
 
 @media screen and (max-width: 768px) {
   .desc {
-    height: 840px;
+    height: 180px;
     z-index: 1;
+  }
+
+  .project:hover .desc {
+    height: 840px;
+    visibility: visible;
   }
 }

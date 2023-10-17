@@ -5,10 +5,11 @@ import fullStackSvg from "../../assets/full-stack.svg";
 import problemSolvingSvg from "../../assets/problem-solving.svg";
 import collaboratSpiritSvg from "../../assets/collaboration.svg";
 import TechnologyEnthusiastSvg from "../../assets/tech.svg";
+import { forwardRef } from "react";
 
-const AboutSection = () => {
+const AboutSection = forwardRef(function AboutSection(_, ref) {
   return (
-    <Stack className="wrapper_section" id="About">
+    <Stack className="wrapper_section" id="About" ref={ref}>
       <div className={styles.about_desc}>
         <span className="heding_meta">About</span>
         <h2 className="heading_description">WHO AM I?</h2>
@@ -76,6 +77,6 @@ const AboutSection = () => {
       </Container>
     </Stack>
   );
-};
+});
 
 export default AboutSection;

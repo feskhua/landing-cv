@@ -14,10 +14,10 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 150px;
+  height: 200px;
   margin-bottom: 0.5em;
   position: relative;
-  width: 150px;
+  width: 200px;
 }
 
 .author_name {
@@ -35,11 +35,12 @@
 
 .author_position {
   font-size: 12px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .author_position a {
-  margin-right: 3px;
+  font-size: 15px;
 }
 
 .nav_panel {
