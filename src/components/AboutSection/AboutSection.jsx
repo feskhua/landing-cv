@@ -61,7 +61,7 @@ const AboutSection = () => {
               </div>
             </Fade>
           </Col>
-          <Col md={3}>
+          <Col lg={3}>
             <Fade bottom>
               <div
                 className={`${styles.animate_box} animate_wrapper`}

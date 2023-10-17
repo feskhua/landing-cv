@@ -55,6 +55,7 @@ function App() {
   }, []);
 
   const isSmSize = windowSize.innerWidth < 769;
+  const isMdSize = windowSize.innerWidth < 992;
 
   return (
     <Stack className="align-items-center">
@@ -80,7 +81,7 @@ function App() {
             )}
             <HomeSection />
             <AboutSection />
-            <ServicesSection />
+            <ServicesSection isMdSize={isMdSize}/>
             <SkillsSection />
             <EducationSection />
             <ExperienceSection />
