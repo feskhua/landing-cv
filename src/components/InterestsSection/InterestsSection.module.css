@@ -1,15 +1,18 @@
 .interest {
   margin-bottom: 1em;
   position: relative;
-
 }
 
 .interest_content {
+  align-items: center;
   background-color: #012543;
+  display: flex;
   color: #fff;
+  flex-direction: column;
   height: 100%;
-  margin: 0 auto;
+  justify-content: center;
   opacity: 0.85;
+  padding: 0 5%;
   position: absolute;
   right: 0;
   text-align: center;
@@ -17,6 +20,13 @@
   width: 100%;
 }
 
-.interest_content h5, .interest_content p {
-  margin-top: 10%;
+.interest_content h5,
+.interest_content p {
+  margin: 2% 0 0;
+}
+
+@media screen and (min-width: 992px) {
+  .interest {
+    min-height: 140px;
+  }
 }

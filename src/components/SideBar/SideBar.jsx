@@ -13,46 +13,47 @@ export const MAP_NAV = [
   'Interests',
   'Contact',
 ];
-
-const SideBar = ({ activeIndex }) => (
-  <Stack
-    className={`${styles.wrapper} ${styles.side_menu} align-items-center`}
-    gap={2}
-    id="side-bar"
-  >
-    <Image className={styles.author_img} src={photo} roundedCircle />
-    <h1 className={styles.author_name}>
-      <a className="text-decoration-none" href="#1">
-        Yevhenii Fesenko
-      </a>
-    </h1>
-    <div className={styles.author_position}>
-      <a className="text-decoration-none" href="#2">
-        Full Stack Web Developer
-      </a>
-      <div>From Ukraine</div>
-    </div>
-    <Nav
-      className={`${styles.nav_panel} flex-column justify-content-center mt-3`}
-      activeKey={activeIndex}
-      variant="underline"
-    >
-      {MAP_NAV.map((item, index) => (
-        <Nav.Item
-          className={`${styles.nav_panel_item} d-flex justify-content-center`}
-          key={item}
+const SideBar = ({ activeIndex, open }) => {
+  return (
+    <>
+      <Stack
+        className={`${styles.wrapper} align-items-center  
+        ${styles.side_menu} ${open ? styles.box : styles.animation_box}
+        `}
+        gap={2}
+        id="side-bar"
+      >
+        <Image className={styles.author_img} src={photo} roundedCircle />
+        <h1 className={styles.author_name}>
+          <span>Yevhenii Fesenko</span>
+        </h1>
+        <div className={styles.author_position}>
+          <span>Full Stack Web Developer</span>
+          <div>From Ukraine</div>
+        </div>
+        <Nav
+          className={`${styles.nav_panel} flex-column justify-content-center mt-3`}
+          activeKey={activeIndex}
+          variant="underline"
         >
-          <Nav.Link
-            className={styles.nav_panel_link}
-            eventKey={index}
-            href={`#${item}`}
-          >
-            {item}
-          </Nav.Link>
-        </Nav.Item>
-      ))}
-    </Nav>
-  </Stack>
-);
+          {MAP_NAV.map((item, index) => (
+            <Nav.Item
+              className={`${styles.nav_panel_item} d-flex justify-content-center`}
+              key={item}
+            >
+              <Nav.Link
+                className={styles.nav_panel_link}
+                eventKey={index}
+                href={`#${item}`}
+              >
+                {item}
+              </Nav.Link>
+            </Nav.Item>
+          ))}
+        </Nav>
+      </Stack>
+    </>
+  );
+};
 
 export default SideBar;

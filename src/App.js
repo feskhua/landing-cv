@@ -82,32 +82,27 @@ function App() {
 
     const handleScroll = () => {
       if (isSmSize) {
-        setOpen(false);
+        setOpen(null);
       }
     };
 
-    mainRef.current.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleWindowResize);
+    mainRef.current.addEventListener("scrollend", handleScroll);
+    window.addEventListener("resize", handleWindowResize);
 
     return () => {
-      mainRef.current.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleWindowResize);
+      mainRef.current.removeEventListener("scrollend", handleScroll);
+      window.removeEventListener("resize", handleWindowResize);
     };
-  }, [mainRef]);
+  }, [isSmSize, mainRef]);
 
   return (
     <Stack className="align-items-center">
       <div className="wrapper_content">
         <Stack direction="horizontal">
-          {(Boolean(open) || !isSmSize) && (
-            <SideBar
-              activeIndex={activeIndex}
-              open={open}
-              isSmSize={isSmSize}
-            />
+          {(open !== null || !isSmSize) && (
+            <SideBar activeIndex={activeIndex} open={!isSmSize || open} />
           )}
-
-          <Stack ref={mainRef} className="section main">
+          <Stack className="main" ref={mainRef}>
             {isSmSize && !open && (
               <i
                 className="menu_icon bi bi-list"

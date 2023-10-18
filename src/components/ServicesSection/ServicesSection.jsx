@@ -136,7 +136,7 @@ const ServicesSection = forwardRef(function ServicesSection({ isMdSize }, ref) {
                       <img alt="agile" src={agileSvg} />
                     </div>
                     <div className={`${styles.desc}`}>
-                      <h3> Agile</h3>
+                      <h3>Methodology</h3>
                       <p>
                         Experience working with Agile, Scrum, and Kanban
                         methodologies
@@ -257,7 +257,7 @@ const ServicesSection = forwardRef(function ServicesSection({ isMdSize }, ref) {
                       <img alt="agile" src={agileSvg} />
                     </div>
                     <div className={`${styles.desc}`}>
-                      <h3> Agile</h3>
+                      <h3>Methodology</h3>
                       <p>
                         Experience working with Agile, Scrum, and Kanban
                         methodologies

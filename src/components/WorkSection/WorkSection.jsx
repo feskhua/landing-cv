@@ -24,7 +24,7 @@ const WorkSection = forwardRef(function WorkSection(_, ref) {
               <hr />
               <Row className={styles.desc}>
                 <Col lg={6}>
-                  <h3>BlueJayRental</h3>
+                  <h3  className="mt-2">BlueJayRental</h3>
                   <p>
                     It is a progressive web application created to connect
                     property owners and real estate agents of Seattle WA.
@@ -45,7 +45,7 @@ const WorkSection = forwardRef(function WorkSection(_, ref) {
                   </p>
                 </Col>
                 <Col lg={6}>
-                  <h5> My role</h5>
+                  <h5 className="mt-2"> My role</h5>
                   <p>
                     I was hired as a back-end developer and created the project
                     from scratch. I completed a number of tasks and assignments.
@@ -71,7 +71,7 @@ const WorkSection = forwardRef(function WorkSection(_, ref) {
               <hr />
               <Row className={styles.desc}>
                 <Col lg={6}>
-                  <h3>Voguescope</h3>
+                  <h3 className="mt-2">Voguescope</h3>
                   <p>
                     Comprehensive web platform - fashion aggregator website,
                     scraping product data from dozens of sites and placing them

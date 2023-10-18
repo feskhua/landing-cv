@@ -18,16 +18,19 @@ const InterestsSection = forwardRef(function (_, ref) {
       </Container>
       <Container>
         <Row>
-          <Col md={6} lg={4}>
+          <Col xs={12} sm={{ span: 8, offset: 2 }} lg={{ span: 4, offset: 0 }}>
             <div className={`${styles.interest}`}>
               <Image src={hickingImg} fluid />
               <div className={styles.interest_content}>
                 <h5>Mountain hiking</h5>
-                <p>Escaping from Babylon and staying in touch with nature is a must for me.</p>
+                <p>
+                  Escaping from Babylon and staying in touch with nature is a
+                  must for me.
+                </p>
               </div>
             </div>
           </Col>
-          <Col md={6} lg={4}>
+          <Col xs={12} sm={{ span: 8, offset: 2 }} lg={{ span: 4, offset: 0 }}>
             <div className={`${styles.interest}`}>
               <Image src={teaImg} fluid />
               <div className={styles.interest_content}>
@@ -36,7 +39,7 @@ const InterestsSection = forwardRef(function (_, ref) {
               </div>
             </div>
           </Col>
-          <Col md={6} lg={4}>
+          <Col xs={12} sm={{ span: 8, offset: 2 }} lg={{ span: 4, offset: 0 }}>
             <div className={`${styles.interest}`}>
               <Image src={guitarImg} fluid />
               <div className={styles.interest_content}>

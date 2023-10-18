@@ -123,10 +123,16 @@
 
 .timeline_centered .timeline_entry .timeline_entry_inner .timeline_label h2 a {
   color: #000;
+  margin-right: 5px;
   text-decoration: none;
 }
 
-.timeline_centered .timeline_entry .timeline_entry_inner .timeline_label h2 span {
+.timeline_centered
+  .timeline_entry
+  .timeline_entry_inner
+  .timeline_label
+  h2
+  span {
   -webkit-opacity: 0.4;
   -moz-opacity: 0.4;
   opacity: 0.4;

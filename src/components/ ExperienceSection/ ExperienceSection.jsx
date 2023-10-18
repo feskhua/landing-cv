@@ -3,7 +3,7 @@ import styles from "./ExperienceSection.module.css";
 import { Col, Container, Row, Stack } from "react-bootstrap";
 import { Fade } from "react-reveal";
 
-const ExperienceSection = forwardRef(function(_, ref) {
+const ExperienceSection = forwardRef(function (_, ref) {
   return (
     <Stack className="wrapper_section" id="Experience" ref={ref}>
       <Container>
@@ -30,8 +30,8 @@ const ExperienceSection = forwardRef(function(_, ref) {
 
                       <div className={styles.timeline_label}>
                         <h2>
-                          <a href="#Home"> Back End Developer at SoftServe</a>
-                          <span> 2016 - 2019</span>
+                          <a href="#Home">Back End Developer at SoftServe</a>
+                          <span>2016 - 2019</span>
                         </h2>
                         <p>
                           This company gave birth to my future career. The
@@ -81,7 +81,7 @@ const ExperienceSection = forwardRef(function(_, ref) {
                         <h2>
                           <a href="#Home">
                             Senior Full Stack Developer as Freelancer
-                          </a>{" "}
+                          </a>
                           <span>2021 - Now</span>
                         </h2>
                         <p>
