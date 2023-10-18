@@ -1,7 +1,7 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Stack } from "react-bootstrap";
+import { Stack } from 'react-bootstrap';
 import {
   AboutSection,
   HomeSection,
@@ -14,9 +14,9 @@ import {
   ContactSection,
   Footer,
   InterestsSection,
-} from "./components";
-import { useEffect, useRef, useState } from "react";
-import { MAP_NAV } from "./components/SideBar/SideBar";
+} from './components';
+import { useEffect, useRef, useState } from 'react';
+import { MAP_NAV } from './components/SideBar/SideBar';
 
 function App() {
   const homeRef = useRef(null);
@@ -27,7 +27,7 @@ function App() {
   const experienceRef = useRef(null);
   const workRef = useRef(null);
   const interestsRef = useRef(null);
-  const lastScrollTop = useRef(0);
+  const mainRef = useRef(null);
 
   const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
@@ -38,20 +38,23 @@ function App() {
   const [open, setOpen] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const isSmSize = windowSize.innerWidth < 769;
+  const isMdSize = windowSize.innerWidth < 992;
+
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "-20% 0% -70% 0%",
+      rootMargin: '-20% 0% -70% 0%',
       threshold: 0,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const idActivSection = entry.target.getAttribute("id");
+          const idActiveSection = entry.target.getAttribute('id');
 
           MAP_NAV.forEach((section, index) => {
-            if (section === idActivSection) setActiveIndex(index);
+            if (section === idActiveSection) setActiveIndex(index);
           });
         }
       });
@@ -78,38 +81,33 @@ function App() {
     };
 
     const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const prevScrollTop = lastScrollTop.current;
-
-      if (prevScrollTop === 0) {
-        lastScrollTop.current = scrollTop;
-        return;
-      }
-
-      if (prevScrollTop !== scrollTop) {
-        setOpen(null);
-        lastScrollTop.current = scrollTop;
+      if (isSmSize) {
+        setOpen(false);
       }
     };
 
-    window.addEventListener("scrollend", handleScroll);
-    window.addEventListener("resize", handleWindowResize);
+    mainRef.current.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleWindowResize);
 
     return () => {
-      window.removeEventListener("scrollend", handleScroll);
-      window.removeEventListener("resize", handleWindowResize);
+      mainRef.current.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleWindowResize);
     };
-  }, []);
-
-  const isSmSize = windowSize.innerWidth < 769;
-  const isMdSize = windowSize.innerWidth < 992;
+  }, [mainRef]);
 
   return (
     <Stack className="align-items-center">
       <div className="wrapper_content">
         <Stack direction="horizontal">
-          <SideBar activeIndex={activeIndex} open={open} isSmSize={isSmSize} />
-          <Stack className="section">
+          {(Boolean(open) || !isSmSize) && (
+            <SideBar
+              activeIndex={activeIndex}
+              open={open}
+              isSmSize={isSmSize}
+            />
+          )}
+
+          <Stack ref={mainRef} className="section main">
             {isSmSize && !open && (
               <i
                 className="menu_icon bi bi-list"

@@ -45,6 +45,7 @@
 
 .nav_panel {
   min-height: 285px;
+  flex-wrap: nowrap;
 }
 
 .nav_panel_link {
@@ -90,4 +91,8 @@
   100% {
     margin-left: -0px;
   }
+}
+
+.side_menu {
+  overflow-y: scroll;
 }

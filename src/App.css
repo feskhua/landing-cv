@@ -62,7 +62,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
   .animate_wrapper {
     margin-right: 0;
   }
@@ -96,7 +96,7 @@
 .SkillsSection_progress_wrap__Wos0l .progress-bar:after {
   background: #2c98f0;
   border-radius: 50%;
-  content: "";
+  content: '';
   height: 10px;
   position: absolute;
   right: 0;
@@ -202,4 +202,9 @@
 .SkillsSection_progress_wrap__Wos0l span.color-8 {
   color: #53ec54;
   right: 10%;
+}
+
+.main {
+  overflow-y: scroll;
+  max-height: 100vh;
 }

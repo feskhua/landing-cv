@@ -1,78 +1,84 @@
 @font-face {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-weight: 400;
-  src: local("Playfair Display"),
-    url(./fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf) format("truetype");
+  src: local('Playfair Display'),
+    url(./fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf)
+      format('truetype');
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-weight: 500;
-  src: local("Playfair Display"),
-    url(./fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf) format("truetype");
+  src: local('Playfair Display'),
+    url(./fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf)
+      format('truetype');
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-weight: 600;
-  src: local("Playfair Display"),
-    url(./fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf) format("truetype");
+  src: local('Playfair Display'),
+    url(./fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf)
+      format('truetype');
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-weight: 700;
-  src: local("Playfair Display"),
-    url(./fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf) format("truetype");
+  src: local('Playfair Display'),
+    url(./fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf)
+      format('truetype');
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-weight: 800;
-  src: local("Playfair Display"),
-    url(./fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf) format("truetype");
+  src: local('Playfair Display'),
+    url(./fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf)
+      format('truetype');
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-weight: 900;
-  src: local("Playfair Display"),
-    url(./fonts/Playfair_Display/static/PlayfairDisplay-Black.ttf) format("truetype");
+  src: local('Playfair Display'),
+    url(./fonts/Playfair_Display/static/PlayfairDisplay-Black.ttf)
+      format('truetype');
 }
 
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   font-weight: 300;
-  src: local("Quicksand"),
-    url(./fonts/Quicksand/static/Quicksand-Light.ttf) format("truetype");
+  src: local('Quicksand'),
+    url(./fonts/Quicksand/static/Quicksand-Light.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   font-weight: 400;
-  src: local("Quicksand"),
-    url(./fonts/Quicksand/static/Quicksand-Regular.ttf) format("truetype");
+  src: local('Quicksand'),
+    url(./fonts/Quicksand/static/Quicksand-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   font-weight: 500;
-  src: local("Quicksand"),
-    url(./fonts/Quicksand/static/Quicksand-Medium.ttf) format("truetype");
+  src: local('Quicksand'),
+    url(./fonts/Quicksand/static/Quicksand-Medium.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   font-weight: 600;
-  src: local("Quicksand"),
-    url(./fonts/Quicksand/static/Quicksand-SemiBold.ttf) format("truetype");
+  src: local('Quicksand'),
+    url(./fonts/Quicksand/static/Quicksand-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   font-weight: 700;
-  src: local("Quicksand"),
-    url(./fonts/Quicksand/static/Quicksand-Bold.ttf) format("truetype");
+  src: local('Quicksand'),
+    url(./fonts/Quicksand/static/Quicksand-Bold.ttf) format('truetype');
 }
 
 * {
@@ -83,9 +89,9 @@
 
 body {
   margin: 0;
-  font-family: Playfair Display, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Playfair Display, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --bs-body-font-family: Quicksand, Playfair Display;
@@ -94,4 +100,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  overflow: hidden;
 }
