@@ -26,6 +26,7 @@ function App() {
   const experienceRef = useRef(null);
   const workRef = useRef(null);
   const interestsRef = useRef(null);
+  const contactRef = useRef(null);
   const mainRef = useRef(null);
 
   const getWindowSize = () => {
@@ -43,7 +44,7 @@ function App() {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "-20% 0% -70% 0%",
+      rootMargin: "-70% 0% -20% 0%",
       threshold: 0,
     };
 
@@ -68,6 +69,7 @@ function App() {
       experienceRef,
       workRef,
       interestsRef,
+      contactRef,
     ];
 
     sectionsRef.forEach(({ current }) => {
@@ -147,7 +149,7 @@ function App() {
             <ExperienceSection ref={experienceRef} />
             <WorkSection ref={workRef} />
             <InterestsSection ref={interestsRef} />
-            <ContactSection />
+            <ContactSection ref={contactRef}/>
           </Stack>
         </Stack>
       </div>

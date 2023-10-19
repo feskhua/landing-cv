@@ -234,5 +234,18 @@
 }
 
 .swiper.swiper-initialized.swiper-horizontal .swiper-pagination {
-  bottom: -5px ;
+  bottom: -5px;
+}
+
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+  content: "";
+}
+
+.swiper:hover .swiper-button-next::after {
+  content: "next";
+}
+
+.swiper:hover .swiper-button-prev::after {
+  content: "prev";
 }

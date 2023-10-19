@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing-cv/static/css/main.abe9cf0d.css",
-    "main.js": "/landing-cv/static/js/main.d1091a8b.js",
+    "main.css": "/landing-cv/static/css/main.8acb6c8c.css",
+    "main.js": "/landing-cv/static/js/main.36a94793.js",
     "static/js/787.c19234ab.chunk.js": "/landing-cv/static/js/787.c19234ab.chunk.js",
     "static/media/Voguescope.png": "/landing-cv/static/media/Voguescope.94dd851603748ac39752.png",
     "static/media/hicking.png": "/landing-cv/static/media/hicking.d67da242f20d6f8a366d.png",
@@ -38,12 +38,12 @@
     "static/media/email.svg": "/landing-cv/static/media/email.a54e78c491e41003e843b3bf3c7b3963.svg",
     "index.html": "/landing-cv/index.html",
     "static/media/linkedin.svg": "/landing-cv/static/media/linkedin.cabf6aba43a88698fdc1740179de3bff.svg",
-    "main.abe9cf0d.css.map": "/landing-cv/static/css/main.abe9cf0d.css.map",
-    "main.d1091a8b.js.map": "/landing-cv/static/js/main.d1091a8b.js.map",
+    "main.8acb6c8c.css.map": "/landing-cv/static/css/main.8acb6c8c.css.map",
+    "main.36a94793.js.map": "/landing-cv/static/js/main.36a94793.js.map",
     "787.c19234ab.chunk.js.map": "/landing-cv/static/js/787.c19234ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abe9cf0d.css",
-    "static/js/main.d1091a8b.js"
+    "static/css/main.8acb6c8c.css",
+    "static/js/main.36a94793.js"
   ]
 }

@@ -2,13 +2,14 @@ import { Col, Container, Row, Stack } from "react-bootstrap";
 import styles from "./ContactSection.module.css";
 import emailSvg from "../../assets/email.svg";
 import linkedinSvg from "../../assets/linkedin.svg";
+import { forwardRef } from "react";
 
 const EMAIL = "fes.khua@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/yevhenii-fesenko-seniorengineer/";
 
-const ContactSection = () => {
+const ContactSection = forwardRef((_, ref) => {
   return (
-    <Stack className="wrapper_section" id="Contact">
+    <Stack className="wrapper_section" id="Contact" ref={ref}>
       <Container>
         <span className="heding_meta ">Get in Touch</span>
         <Row>
@@ -54,6 +55,6 @@ const ContactSection = () => {
       </Container>
     </Stack>
   );
-};
+});
 
 export default ContactSection;
