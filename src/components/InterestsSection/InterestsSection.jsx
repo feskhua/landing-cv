@@ -6,8 +6,9 @@ import teaImg from "../../assets/tea.png";
 import guitarImg from "../../assets/guitar.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 const InterestsSection = forwardRef((_, ref) => {
   return (
@@ -24,8 +25,14 @@ const InterestsSection = forwardRef((_, ref) => {
         <Row>
           <Col xg={{ span: 8, offset: 2 }}>
             <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
               navigation={true}
-              modules={[Navigation]}
+              modules={[Navigation, Pagination]}
               className="mySwiper"
             >
               <SwiperSlide>
