@@ -136,7 +136,7 @@ const ServicesSection = forwardRef(({ isMdSize }, ref) => {
                       <img alt="agile" src={agileSvg} />
                     </div>
                     <div className={`${styles.desc}`}>
-                      <h3>Methodology</h3>
+                      <h3>Methodologies</h3>
                       <p>
                         Experience working with Agile, Scrum, and Kanban
                         methodologies
