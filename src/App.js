@@ -76,24 +76,40 @@ function App() {
   }, [activeIndex]);
 
   useEffect(() => {
+    if (mainRef.current) {
+      const mainElement = mainRef.current;
+      const handleScroll = () => {
+        if (isSmSize) {
+          setOpen(null);
+        }
+      };
+
+      const handleWheel = (event) => {
+        if (mainRef !== null) {
+          mainRef.current.scrollTop += event.deltaY;
+        }
+      };
+
+      window.addEventListener('wheel', handleWheel);
+      mainElement.addEventListener('scrollend', handleScroll);
+
+      return () => {
+        window.removeEventListener('wheel', handleWheel);
+        mainElement.removeEventListener('scrollend', handleScroll);
+      };
+    }
+  }, [isSmSize, mainRef]);
+
+  useEffect(() => {
     const handleWindowResize = () => {
       setWindowSize(getWindowSize());
     };
 
-    const handleScroll = () => {
-      if (isSmSize) {
-        setOpen(null);
-      }
-    };
-
-    mainRef.current.addEventListener("scrollend", handleScroll);
-    window.addEventListener("resize", handleWindowResize);
-
+    window.addEventListener('resize', handleWindowResize);
     return () => {
-      mainRef.current.removeEventListener("scrollend", handleScroll);
-      window.removeEventListener("resize", handleWindowResize);
+      window.removeEventListener('resize', handleWindowResize);
     };
-  }, [isSmSize, mainRef]);
+  }, []);
 
   return (
     <Stack className="align-items-center">
@@ -102,7 +118,10 @@ function App() {
           {(open !== null || !isSmSize) && (
             <SideBar activeIndex={activeIndex} open={!isSmSize || open} />
           )}
-          <Stack className="main" ref={mainRef}>
+          <Stack
+            className={`${isSmSize ? 'main_scroll' : 'main'}`}
+            ref={mainRef}
+          >
             {isSmSize && !open && (
               <i
                 className="menu_icon bi bi-list"

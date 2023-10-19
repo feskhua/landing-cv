@@ -205,6 +205,11 @@
 }
 
 .main {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.main_scroll {
   overflow-y: scroll;
   max-height: 100vh;
 }
