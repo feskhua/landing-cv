@@ -2,7 +2,7 @@ import { Col, Container, Row, Stack } from "react-bootstrap";
 import styles from "./EducationSection.module.css";
 import { forwardRef } from "react";
 
-const EducationSection = forwardRef(function EducationSection(_, ref) {
+const EducationSection = forwardRef((_, ref) => {
   return (
     <Stack className="wrapper_section" id="Education" ref={ref}>
       <Container>

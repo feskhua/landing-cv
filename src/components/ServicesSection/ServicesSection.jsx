@@ -9,7 +9,7 @@ import mobileSvg from "../../assets/mobile-app.svg";
 import agileSvg from "../../assets/agile.svg";
 import { forwardRef } from "react";
 
-const ServicesSection = forwardRef(function ServicesSection({ isMdSize }, ref) {
+const ServicesSection = forwardRef(({ isMdSize }, ref) => {
   return (
     <Stack className="wrapper_section" id="Services" ref={ref}>
       <Container>

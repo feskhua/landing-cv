@@ -3,7 +3,7 @@ import styles from "./HomeSection.module.css";
 import cvPdf from "../../assets/cv.pdf";
 import { forwardRef } from "react";
 
-const HomeSection = forwardRef(function HomeSection(_, ref) {
+const HomeSection = forwardRef((_, ref) => {
   return (
     <div className={styles.wrapper} id="Home" ref={ref}>
       <Container className={styles.content}>

@@ -1,7 +1,7 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import { Stack } from 'react-bootstrap';
+import { Stack } from "react-bootstrap";
 import {
   AboutSection,
   HomeSection,
@@ -12,11 +12,10 @@ import {
   WorkSection,
   EducationSection,
   ContactSection,
-  Footer,
   InterestsSection,
-} from './components';
-import { useEffect, useRef, useState } from 'react';
-import { MAP_NAV } from './components/SideBar/SideBar';
+} from "./components";
+import { useEffect, useRef, useState } from "react";
+import { MAP_NAV } from "./components/SideBar/SideBar";
 
 function App() {
   const homeRef = useRef(null);
@@ -44,14 +43,14 @@ function App() {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '-20% 0% -70% 0%',
+      rootMargin: "-20% 0% -70% 0%",
       threshold: 0,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const idActiveSection = entry.target.getAttribute('id');
+          const idActiveSection = entry.target.getAttribute("id");
 
           MAP_NAV.forEach((section, index) => {
             if (section === idActiveSection) setActiveIndex(index);
@@ -68,6 +67,7 @@ function App() {
       educationRef,
       experienceRef,
       workRef,
+      interestsRef,
     ];
 
     sectionsRef.forEach(({ current }) => {
@@ -78,6 +78,7 @@ function App() {
   useEffect(() => {
     if (mainRef.current) {
       const mainElement = mainRef.current;
+
       const handleScroll = () => {
         if (isSmSize) {
           setOpen(null);
@@ -90,12 +91,12 @@ function App() {
         }
       };
 
-      window.addEventListener('wheel', handleWheel);
-      mainElement.addEventListener('scrollend', handleScroll);
+      window.addEventListener("wheel", handleWheel);
+      mainElement.addEventListener("scrollend", handleScroll);
 
       return () => {
-        window.removeEventListener('wheel', handleWheel);
-        mainElement.removeEventListener('scrollend', handleScroll);
+        window.removeEventListener("wheel", handleWheel);
+        mainElement.removeEventListener("scrollend", handleScroll);
       };
     }
   }, [isSmSize, mainRef]);
@@ -105,9 +106,9 @@ function App() {
       setWindowSize(getWindowSize());
     };
 
-    window.addEventListener('resize', handleWindowResize);
+    window.addEventListener("resize", handleWindowResize);
     return () => {
-      window.removeEventListener('resize', handleWindowResize);
+      window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
 
@@ -119,7 +120,7 @@ function App() {
             <SideBar activeIndex={activeIndex} open={!isSmSize || open} />
           )}
           <Stack
-            className={`${isSmSize ? 'main_scroll' : 'main'}`}
+            className={`${isSmSize ? "main_scroll" : "main"}`}
             ref={mainRef}
           >
             {isSmSize && !open && (
@@ -147,7 +148,6 @@ function App() {
             <WorkSection ref={workRef} />
             <InterestsSection ref={interestsRef} />
             <ContactSection />
-            <Footer />
           </Stack>
         </Stack>
       </div>

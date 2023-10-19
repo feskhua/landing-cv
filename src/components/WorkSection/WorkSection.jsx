@@ -5,7 +5,7 @@ import Voguescope from "../../assets/Voguescope.png";
 import Switfly from "../../assets/Swiftly.png";
 import { forwardRef } from "react";
 
-const WorkSection = forwardRef(function WorkSection(_, ref) {
+const WorkSection = forwardRef((_, ref) => {
   return (
     <Stack className="wrapper_section" id="Work" ref={ref}>
       <Container>

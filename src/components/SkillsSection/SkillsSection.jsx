@@ -3,7 +3,7 @@ import styles from "./SkillsSection.module.css";
 import { Fade } from "react-reveal";
 import { forwardRef } from "react";
 
-const SkillsSection = forwardRef(function SkillsSection(_, ref) {
+const SkillsSection = forwardRef((_, ref) => {
   return (
     <Stack className="wrapper_section" id="Skills" ref={ref}>
       <Container>

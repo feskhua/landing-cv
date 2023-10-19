@@ -3,7 +3,7 @@ import styles from "./ExperienceSection.module.css";
 import { Col, Container, Row, Stack } from "react-bootstrap";
 import { Fade } from "react-reveal";
 
-const ExperienceSection = forwardRef(function (_, ref) {
+const ExperienceSection = forwardRef((_, ref) => {
   return (
     <Stack className="wrapper_section" id="Experience" ref={ref}>
       <Container>

@@ -5,6 +5,7 @@ import linkedinSvg from "../../assets/linkedin.svg";
 
 const EMAIL = "fes.khua@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/yevhenii-fesenko-seniorengineer/";
+
 const ContactSection = () => {
   return (
     <Stack className="wrapper_section" id="Contact">
@@ -17,7 +18,7 @@ const ContactSection = () => {
         </Row>
       </Container>
       <Container>
-        <Row>
+        <Row className="pb-5">
           <Col lg={6}>
             <Stack
               className={`${styles.contact} align-content-center mb-3`}

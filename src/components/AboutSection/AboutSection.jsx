@@ -7,7 +7,7 @@ import collaboratSpiritSvg from "../../assets/collaboration.svg";
 import TechnologyEnthusiastSvg from "../../assets/tech.svg";
 import { forwardRef } from "react";
 
-const AboutSection = forwardRef(function AboutSection(_, ref) {
+const AboutSection = forwardRef((_, ref) => {
   return (
     <Stack className="wrapper_section" id="About" ref={ref}>
       <div className={styles.about_desc}>
